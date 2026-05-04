@@ -5,28 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Previsão do tempo</title>
 </head>
 
 <body>
-    <div class="informações">
 
-        <input class="input-cidade" type="text" placeholder="Digite sua cidade">
-        <button onclick="botão()"><img src="" alt="">Buscar</button>
+    <div class="buscar">
+        <div class="img_buscar">
+            <p>Previsão do tempo</p>
+            <lord-icon
+                src="https://cdn.lordicon.com/kwzoevky.json"
+                trigger="loop"
+                stroke="light"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width:250px;height:250px">
+            </lord-icon> 
+            
+        </div>
+        
+        <div>
+            <input class="input_cidade" type="text" placeholder="Digite sua cidade">
+            <button onclick="botão()"><img src="" alt="">Buscar</button>
+        </div>
+        
+    </div>
 
-        <h2 class="nome-cidade">Tempo de Paulista</h2>
+    <div class="procurando_algo">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/wjyqkiew.json"
+            trigger="loop"
+            state="hover-rotation"
+            colors="primary:#ffffff,secondary:#ffffff"
+            style="width:100px;height:100px">
+        </lord-icon>
+        <h1>Procurando o clima de algum lugar?</h1>
+    </div>
 
-        <p class="temperatura">21 ºC</p>
-
+    <div class="informações"> 
+        
         <div class="caixa-nuvem">
-            <img class="img-previsão" src="https://openweathermap.org/img/wn/04n.png" alt="Tempo-icone"> 
-            <p class="previsão">Nublado</p>
+            
+            
         </div>
 
-        <p class="umidade">Umidade: 76%</p>
+        <div class="caixa-informaçoes">
+            <img class="img-previsão" src="https://openweathermap.org/img/wn/04n.png" alt="Tempo-icone"> 
+            <h2 class="nome-cidade">Tempo de Paulista</h2>
+            <p class="country"></p>
+            <p class="previsão"> Nublado</p>
+            <p class="temperatura">21 ºC</p>
+            <p class="umidade">Umidade: 76%</p>
+        </div>
+
+        
         
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>
